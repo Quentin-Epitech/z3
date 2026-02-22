@@ -20,7 +20,7 @@ st.markdown("---")
 # Chargement des données
 @st.cache_data
 def load_data():
-    df = pd.read_csv('data.csv')
+    df = pd.read_csv('bmw_z3_merged.csv')
     
     # Conversion de la date au format datetime
     df['date_publication'] = pd.to_datetime(df['date_publication'], format='%d/%m/%Y')
